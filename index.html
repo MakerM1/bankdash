@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BankDash</title>
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,26 +19,126 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
   </head>
   <body>
     <header>
       <div class="header__main-container">
+        <div class="header__hamburger-menu">
+          <span class="header__hamburger-lines"></span>
+          <span class="header__hamburger-lines"></span>
+          <span class="header__hamburger-lines"></span>
+        </div>
         <div class="header__left">
-          <h1>Overview</h1>
+          <img src="images/main-logo.svg" alt="main logo" />
+          <div class="line"></div>
+          <h1 class="header__title">Overview</h1>
         </div>
         <div class="header__right">
-          <form action="#" class="header__search">
-            <input
-              type="search"
-              placeholder="Search for something"
-              class="header__search-input"
-            />
-          </form>
-          <button></button>
-          <button></button>
-          <img src="" alt="" />
+          <div class="header__inputs">
+            <form action="#" class="header__search">
+              <input
+                type="search"
+                placeholder="Search for something"
+                class="header__search-input"
+              />
+            </form>
+            <button class="default-button-style">
+              <a href="#">
+                <img src="images/settings-1.svg" alt="settings" />
+              </a>
+            </button>
+            <button class="default-button-style">
+              <a href="#">
+                <img src="images/notification-1.svg" alt="notifications" />
+              </a>
+            </button>
+          </div>
+          <a href="#"
+            ><img
+              src="images/profile-picture.png"
+              alt="pfp"
+              class="header__pfp"
+          /></a>
         </div>
       </div>
+      <div class="header__phone-search">
+        <form action="#" class="header__search">
+          <input
+            type="search"
+            placeholder="Search for something"
+            class="header__search-input"
+          />
+        </form>
+      </div>
     </header>
+
+    <div class="overlay"></div>
+
+    <aside class="side-bar">
+      <div class="aside__main-container">
+        <div class="aside__bottom">
+          <nav>
+            <ul class="nav__options">
+              <li>
+                <a href="#" class="nav__option active">
+                  <i class="fa-solid fa-house"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-money-bill-transfer"></i>
+                  <p>Transactions</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-user"></i>
+                  <p>Accounts</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>Investments</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-credit-card"></i>
+                  <p>Credit Cards</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                  <p>Loans</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <p>Services</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <p>My Privileges</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-gear"></i>
+                  <p>Setting</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    <script src="scripts/sidebar.js"></script>
   </body>
 </html>

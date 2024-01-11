@@ -3,29 +3,34 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.header__search {
-    position: relative;
-}
-
-.header__search-input {
-    background-color: #F5F7FA;
-    max-width: 255px;
-    width: 100%;
-    border-radius: 45px;
+.default-button-style {
+    width: 50px;
     height: 50px;
-    color: #8BA3CB;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 50px;
+    background-color: #F5F7FA;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
-.header__search-input::placeholder {
-    color: #8BA3CB;
-    font-size: 15px;
-    font-weight: 400;
+.default-button-style:hover {
+    background-color: #e8edf4;
 }
 
-.header__search::before {
-    content: url('../images/magnifying-glass-1.svg');
-    display: inline-block;
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.285);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
 }
