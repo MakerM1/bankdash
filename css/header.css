@@ -1,0 +1,16 @@
+header {
+    max-width: 1190px;
+    width: 100%;
+    min-height: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.header__main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

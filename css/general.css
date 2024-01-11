@@ -1,0 +1,31 @@
+body {
+    background-color: #F5F7FA;
+    font-family: 'Inter', sans-serif;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search-input {
+    background-color: #F5F7FA;
+    max-width: 255px;
+    width: 100%;
+    border-radius: 45px;
+    height: 50px;
+    color: #8BA3CB;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 50px;
+}
+
+.header__search-input::placeholder {
+    color: #8BA3CB;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header__search::before {
+    content: url('../images/magnifying-glass-1.svg');
+    display: inline-block;
+}
