@@ -9,14 +9,18 @@ main {
 }
 
 .my-cards {
-    border: 2px solid red;
     padding: 20px;
+}
+
+.my-card__left {
+    max-width: 730px;
+    width: 100%;
 }
 
 .my-cards__main-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -49,14 +53,15 @@ main {
 }
 
 .my-cards__container {
+    max-width: 730px;
+    width: 100%;
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: space-between;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     margin-bottom: 20px;
-    flex-shrink: 1;
 }
 
 .card {
