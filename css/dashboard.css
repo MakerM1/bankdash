@@ -35,15 +35,7 @@ main {
 
 .my-card__heading {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.my-card__heading h2 {
-    color: #343C6A;
-    font-size: 22px;
-    font-weight: 600;
 }
 
 .my-card__heading p {
@@ -187,13 +179,6 @@ main {
     font-weight: 600;
 }
 
-.my-card__right h2 {
-    color: #343C6A;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
 .recent-transactions {
     max-width: 350px;
     width: 100%;
@@ -239,4 +224,256 @@ main {
     color: #41D4A8;
     font-size: 16px;
     font-weight: 500;
+}
+
+/* || statistics */
+
+.statistics {
+    padding: 20px;
+}
+
+.statiscits__main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.statistics__info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.statiscits__left {
+    max-width: 730px;
+    width: 100%;
+}
+
+.weekly-activity__container {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 730px;
+    width: 100%;
+    padding: 20px;
+    min-height: 322px;
+}
+
+.weekly-activity__container img {
+    max-width: 730px;
+    width: 100%;
+}
+
+.diposit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.diposit p {
+    color: #718EBF;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.withrdaw p {
+    color: #718EBF;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.withrdaw {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle__pink {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF82AC;
+}
+
+.circle__green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #16DBCC;
+}
+
+.statistics__right {
+    max-width: 350px;
+    width: 100%;
+}
+
+.expense {
+    background-color: white;
+    max-width: 350px;
+    width: 100%;
+    height: 322px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+/* || transfer-history */
+
+.transfer-history {
+    padding: 24px;
+}
+
+.transfer-history__main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.transfer__card {
+    max-width: 445px;
+    width: 100%;
+    min-height: 276px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px 15px;
+}
+
+.transfer__profile:hover p,
+.transfer__profile:hover h4 {
+    font-weight: 600;
+}
+
+.transfer__profiles {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.transfer__profile {
+    cursor: pointer;
+    text-align: center;
+    max-width: 96px;
+    width: 100%;
+}
+
+.transfer__profile img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.transfer__profile h4 {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.2s;
+    margin-bottom: 5px;
+}
+
+.transfer__profile p {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+.button-next {
+    color: #718EBF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: rgb(242, 242, 242);
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.button-next:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.transfer__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transfer__amount {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.transfer__amount-text {
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.transfer__amount-form {
+    max-width: 265px;
+    width: 100%;
+    position: relative;
+}
+
+.transfer__amount-input {
+    border-radius: 50px;
+    background: #EDF1F7;
+    outline: none;
+    max-width: 265px;
+    width: 100%;
+    height: 50px;
+    padding: 15px 130px 15px 15px;
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.transfer__amount-input::placeholder {
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.transfer__amount-send {
+    width: 125px;
+    height: 50px;
+    border-radius: 50px;
+    background: #1814F3;
+    color: white;
+    box-shadow: 4px 4px 18px -2px rgba(231, 228, 232, 0.80);
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.transfer__amount-send:hover {
+    background-color: #1512c5;
+}
+
+.history__main-container {
+    max-width: 635px;
+    width: 100%;
+    min-height: 276px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.history__main-container img {
+    max-width: 635px;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    div {
+        height: auto;
+    }
 }

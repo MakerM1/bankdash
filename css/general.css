@@ -3,6 +3,12 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+@media (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+}
+
 .default-button-style {
     width: 50px;
     height: 50px;
@@ -34,4 +40,11 @@ body {
 .overlay.active {
     visibility: visible;
     opacity: 1;
+}
+
+.h2--style {
+    color: #343C6A;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }

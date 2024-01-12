@@ -1,8 +1,8 @@
 .side-bar {
     max-width: 240px;
     width: 100%;
-    position: fixed;
-    height: 100vh;
+    position: absolute;
+    min-height: 1190px;
     left: 0;
     top: 120px;
     display: inline-block;
@@ -24,6 +24,12 @@
 
     .side-bar.active {
         left: 0;
+    }
+}
+
+@media (max-width: 1380px) {
+    .side-bar {
+        height: 2200px;
     }
 }
 
@@ -75,4 +81,10 @@
 
 .nav__option.active::before {
     display: inline-block;
+}
+
+@media (max-width: 500px) {
+    div {
+        height: fit-content;
+    }
 }
