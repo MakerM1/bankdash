@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
   </head>
   <body>
@@ -139,6 +139,103 @@
         </div>
       </div>
     </aside>
+
+    <main>
+      <section class="my-cards">
+        <div class="my-cards__main-container">
+          <div class="my-card__left">
+            <div class="my-card__heading">
+              <h2>My Cards</h2>
+              <p>See All</p>
+            </div>
+            <div class="my-cards__container">
+              <div class="my-card__card card">
+                <div class="card__top">
+                  <div class="card__balance">
+                    <p class="card__balance-text">Balance</p>
+                    <p class="card__balance-amount">$5,756</p>
+                  </div>
+                  <img src="images/icons/Chip_Card.png" alt="chip" />
+                </div>
+                <div class="card__middle">
+                  <div class="card__name-container">
+                    <p class="card__holder">CARD HOLDER</p>
+                    <p class="card__name">Eddy Cusuma</p>
+                  </div>
+                  <div class="card__validity">
+                    <p class="card__valid">VALID THRU</p>
+                    <p class="card__date">12/22</p>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <p class="card__code">3778 **** **** 1234</p>
+                  <img src="images/icons/mastercard.svg" alt="mastercard" />
+                </div>
+              </div>
+
+              <div class="my-card__card-2 card-2">
+                <div class="card__top">
+                  <div class="card__balance">
+                    <p class="card__balance-text-2">Balance</p>
+                    <p class="card__balance-amount-2">$5,756</p>
+                  </div>
+                  <img src="images/icons/Chip_Card-2.png" alt="chip" />
+                </div>
+                <div class="card__middle">
+                  <div class="card__name-container">
+                    <p class="card__holder-2">CARD HOLDER</p>
+                    <p class="card__name-2">Eddy Cusuma</p>
+                  </div>
+                  <div class="card__validity">
+                    <p class="card__valid-2">VALID THRU</p>
+                    <p class="card__date-2">12/22</p>
+                  </div>
+                </div>
+                <div class="card__bottom-2">
+                  <p class="card__code-2">3778 **** **** 1234</p>
+                  <img src="images/icons/mastercard-2.svg" alt="mastercard" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my-card__right">
+            <h2>Recent Transactions</h2>
+            <div class="recent-transactions">
+              <div class="transactions__line">
+                <div class="transactions__logo">
+                  <img src="images/icons/credit-cards.svg" alt="" />
+                </div>
+                <div class="transactions__text">
+                  <p class="deposit">Deposit from my Card</p>
+                  <p class="date">28 January 2021</p>
+                </div>
+                <div class="transactions__money negative">-$850</div>
+              </div>
+              <div class="transactions__line">
+                <div class="transactions__logo">
+                  <img src="images/icons/paypal.svg" alt="" />
+                </div>
+                <div class="transactions__text">
+                  <p class="deposit">Deposit Paypal</p>
+                  <p class="date">25 January 2021</p>
+                </div>
+                <div class="transactions__money positive">+$2,500</div>
+              </div>
+              <div class="transactions__line">
+                <div class="transactions__logo">
+                  <img src="images/icons/coin.svg" alt="" />
+                </div>
+                <div class="transactions__text">
+                  <p class="deposit">Jemi Wilson</p>
+                  <p class="date">21 January 2021</p>
+                </div>
+                <div class="transactions__money positive">+$2,500</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="scripts/sidebar.js"></script>
   </body>
 </html>

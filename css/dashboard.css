@@ -1,0 +1,237 @@
+main {
+    margin: 0 0 0 240px;
+}
+
+@media (max-width: 966px) {
+    main {
+        margin: 0;
+    }
+}
+
+.my-cards {
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.my-cards__main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my-card__card {
+    width: 350px;
+    height: 235px;
+    background: linear-gradient(107deg, #4C49ED 2.61%, #0A06F4 101.2%);
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.my-card__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.my-card__heading h2 {
+    color: #343C6A;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my-card__heading p {
+    color: #343C6A;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.my-cards__container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 20px;
+    flex-shrink: 1;
+}
+
+.card {
+    position: relative;
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.card__balance-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__balance-amount {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    align-items: center;
+}
+
+.card__holder,
+.card__valid {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__name,
+.card__date {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.card__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.card__code {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my-card__card-2 {
+    width: 350px;
+    height: 235px;
+    background-color: white;
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    color: #343C6A;
+    position: relative;
+}
+
+.card__balance-text-2 {
+    color: #343C6A;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__balance-amount-2 {
+    color: #343C6A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__holder-2,
+.card__valid-2 {
+    color: #718EBF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__name-2,
+.card__date-2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #343C6A;
+}
+
+.card__bottom-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 25px 25px;
+    border: 1px solid #DFEAF2;
+}
+
+.card__code-2 {
+    color: #343C6A;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my-card__right h2 {
+    color: #343C6A;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.recent-transactions {
+    max-width: 350px;
+    width: 100%;
+    min-height: 235px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.transactions__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 18px 0 18px;
+}
+
+.transactions__text {
+    max-width: 167px;
+    width: 100%;
+}
+
+.deposit {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+.date {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.transactions__money.negative {
+    color: #FF4B4A;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.transactions__money.positive {
+    color: #41D4A8;
+    font-size: 16px;
+    font-weight: 500;
+}
