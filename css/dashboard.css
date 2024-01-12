@@ -477,3 +477,9 @@ main {
         height: auto;
     }
 }
+
+@media (max-width: 500px) {
+    .my-card__card-2 {
+        border: 1px solid #DFEAF2;
+    }
+}
