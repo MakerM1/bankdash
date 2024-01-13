@@ -168,7 +168,8 @@
 }
 
 .my-card__card {
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     height: 235px;
     background: linear-gradient(107deg, #2D60FF 2.61%, #539BFF 101.2%);
     border-radius: 25px;
