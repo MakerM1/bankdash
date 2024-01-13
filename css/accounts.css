@@ -58,3 +58,211 @@
         max-width: 45px;
     }
 }
+
+/* || transactions section */
+
+.last-transactions__section {
+    padding: 24px;
+}
+
+.last-transactions__main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.transactions__container {
+    max-width: 730px;
+    width: 100%;
+}
+
+.last-transactions__card {
+    max-width: 730px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.last-transaction__row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.last-transaction__icon {
+    max-width: 55px;
+    width: 100%;
+}
+
+.last-transaction__name {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+
+.last-transaction__date {
+    font-size: 15px;
+    color: #718EBF;
+    font-weight: 400;
+}
+
+.last-transaction__icon-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 250px;
+    width: 100%;
+}
+
+.last-transaction__type,
+.last-transaction__credit-card,
+.last-transaction__completion {
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 650px) {
+
+    .last-transaction__type,
+    .last-transaction__credit-card,
+    .last-transaction__completion {
+        display: none;
+    }
+}
+
+.last-transaction__price.negative {
+    color: #FF4B4A;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.last-transaction__price.positive {
+    color: #41D4A8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-container .my-card__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container {
+    max-width: 350px;
+    width: 100%;
+}
+
+.my-card__card {
+    width: 350px;
+    height: 235px;
+    background: linear-gradient(107deg, #2D60FF 2.61%, #539BFF 101.2%);
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.my-card__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-card__heading a {
+    color: #343C6A;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.my-card__heading a:hover {
+    text-decoration: underline;
+}
+
+.my-cards__container {
+    max-width: 730px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.card__balance-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__balance-amount {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    align-items: center;
+}
+
+.card__holder,
+.card__valid {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__name,
+.card__date {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.card__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.card__code {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
