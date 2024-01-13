@@ -4,6 +4,10 @@
     }
 }
 
+aside {
+    max-height: 1900px;
+}
+
 .my-cards {
     padding: 20px;
 }
