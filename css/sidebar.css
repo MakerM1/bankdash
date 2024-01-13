@@ -70,7 +70,7 @@
     width: 6px;
     border-radius: 0 10px 10px 0;
     background-color: #2D60FF;
-    left: -44px;
+    left: -2.65rem;
     display: none;
 }
 
@@ -81,10 +81,4 @@
 
 .nav__option.active::before {
     display: inline-block;
-}
-
-@media (max-width: 500px) {
-    div {
-        height: fit-content;
-    }
 }

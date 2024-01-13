@@ -1,13 +1,3 @@
-main {
-    margin: 0 0 0 240px;
-}
-
-@media (max-width: 966px) {
-    main {
-        margin: 0;
-    }
-}
-
 .my-cards {
     padding: 20px;
 }
@@ -42,6 +32,7 @@ main {
     color: #343C6A;
     font-size: 17px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .my-cards__container {
@@ -259,7 +250,7 @@ main {
     max-width: 730px;
     width: 100%;
     padding: 20px;
-    min-height: 322px;
+    height: fit-content;
 }
 
 .weekly-activity__container img {
@@ -314,11 +305,12 @@ main {
     background-color: white;
     max-width: 350px;
     width: 100%;
-    height: 322px;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    padding: 68px 10px;
 }
 
 /* || transfer-history */
@@ -462,7 +454,7 @@ main {
 .history__main-container {
     max-width: 635px;
     width: 100%;
-    min-height: 276px;
+    height: fit-content;
     background-color: white;
     border-radius: 25px;
 }

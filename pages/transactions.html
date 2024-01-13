@@ -14,12 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="images/icon-logo.svg" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/dashboard.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="icon" href="../images/icon-logo.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/transactions.css" />
   </head>
   <body>
     <header>
@@ -30,9 +30,9 @@
           <span class="header__hamburger-lines"></span>
         </div>
         <div class="header__left">
-          <img src="images/main-logo.svg" alt="main logo" />
+          <img src="../../images/main-logo.svg" alt="main logo" />
           <div class="line"></div>
-          <h1 class="header__title">Overview</h1>
+          <h1 class="header__title">Transactions</h1>
         </div>
         <div class="header__right">
           <div class="header__inputs">
@@ -45,18 +45,21 @@
             </form>
             <button class="default-button-style">
               <a href="#">
-                <img src="images/settings-1.svg" alt="settings" />
+                <img src="../../images/settings-1.svg" alt="settings" />
               </a>
             </button>
             <button class="default-button-style">
               <a href="#">
-                <img src="images/notification-1.svg" alt="notifications" />
+                <img
+                  src="../../images/notification-1.svg"
+                  alt="notifications"
+                />
               </a>
             </button>
           </div>
           <a href="#"
             ><img
-              src="images/profile-picture.png"
+              src="../../images/profile-picture.png"
               alt="pfp"
               class="header__pfp"
           /></a>
@@ -81,13 +84,13 @@
           <nav>
             <ul class="nav__options">
               <li>
-                <a href="#" class="nav__option active">
+                <a href="../index.html" class="nav__option">
                   <i class="fa-solid fa-house"></i>
                   <p>Dashboard</p>
                 </a>
               </li>
               <li>
-                <a href="pages/transactions.html" class="nav__option">
+                <a href="#" class="nav__option active">
                   <i class="fa-solid fa-money-bill-transfer"></i>
                   <p>Transactions</p>
                 </a>
@@ -141,12 +144,12 @@
     </aside>
 
     <main>
-      <section class="my-cards">
-        <div class="my-cards__main-container">
-          <div class="my-card__left">
+      <section class="cards-epxense-section">
+        <div class="cards-expense__main-container">
+          <div class="cards-epxense-section__left">
             <div class="my-card__heading">
               <h2 class="h2--style">My Cards</h2>
-              <p>See All</p>
+              <a href="#">+ Add Card</a>
             </div>
             <div class="my-cards__container">
               <div class="my-card__card card">
@@ -155,7 +158,7 @@
                     <p class="card__balance-text">Balance</p>
                     <p class="card__balance-amount">$5,756</p>
                   </div>
-                  <img src="images/icons/Chip_Card.png" alt="chip" />
+                  <img src="../images/icons/Chip_Card.png" alt="chip" />
                 </div>
                 <div class="card__middle">
                   <div class="card__name-container">
@@ -169,17 +172,16 @@
                 </div>
                 <div class="card__bottom">
                   <p class="card__code">3778 **** **** 1234</p>
-                  <img src="images/icons/mastercard.svg" alt="mastercard" />
+                  <img src="../images/icons/mastercard.svg" alt="mastercard" />
                 </div>
               </div>
-
               <div class="my-card__card-2 card-2">
                 <div class="card__top">
                   <div class="card__balance">
                     <p class="card__balance-text-2">Balance</p>
                     <p class="card__balance-amount-2">$5,756</p>
                   </div>
-                  <img src="images/icons/Chip_Card-2.png" alt="chip" />
+                  <img src="../images/icons/Chip_Card-2.png" alt="chip" />
                 </div>
                 <div class="card__middle">
                   <div class="card__name-container">
@@ -193,128 +195,24 @@
                 </div>
                 <div class="card__bottom-2">
                   <p class="card__code-2">3778 **** **** 1234</p>
-                  <img src="images/icons/mastercard-2.svg" alt="mastercard" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="my-card__right">
-            <h2 class="h2--style">Recent Transactions</h2>
-            <div class="recent-transactions">
-              <div class="transactions__line">
-                <div class="transactions__logo">
-                  <img src="images/icons/credit-cards.svg" alt="" />
-                </div>
-                <div class="transactions__text">
-                  <p class="deposit">Deposit from my Card</p>
-                  <p class="date">28 January 2021</p>
-                </div>
-                <div class="transactions__money negative">-$850</div>
-              </div>
-              <div class="transactions__line">
-                <div class="transactions__logo">
-                  <img src="images/icons/paypal.svg" alt="" />
-                </div>
-                <div class="transactions__text">
-                  <p class="deposit">Deposit Paypal</p>
-                  <p class="date">25 January 2021</p>
-                </div>
-                <div class="transactions__money positive">+$2,500</div>
-              </div>
-              <div class="transactions__line">
-                <div class="transactions__logo">
-                  <img src="images/icons/coin.svg" alt="" />
-                </div>
-                <div class="transactions__text">
-                  <p class="deposit">Jemi Wilson</p>
-                  <p class="date">21 January 2021</p>
-                </div>
-                <div class="transactions__money positive">+$2,500</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="statistics">
-        <div class="statiscits__main-container">
-          <div class="statiscits__left">
-            <h2 class="h2--style">Weeky Activity</h2>
-            <div class="weekly-activity__container">
-              <div class="statistics__info">
-                <div class="diposit">
-                  <div class="circle__green"></div>
-                  <p class="diposit-text">Diposit</p>
-                </div>
-                <div class="withrdaw">
-                  <div class="circle__pink"></div>
-                  <p class="withdraw-text">Withdraw</p>
-                </div>
-              </div>
-              <img src="images/analitics-1.svg" alt="" />
-            </div>
-          </div>
-          <div class="statistics__right">
-            <h2 class="h2--style">Expense Statistics</h2>
-            <div class="expense">
-              <img src="images/pie-chart.svg" alt="pie chart" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="transfer-history">
-        <div class="transfer-history__main-container">
-          <div class="transfer">
-            <h2 class="h2--style">Quick Transfer</h2>
-            <div class="transfer__card">
-              <div class="transfer__profiles">
-                <div class="transfer__profile">
-                  <img src="images/profile-1.png" alt="profile" />
-                  <h4>Livia Bator</h4>
-                  <p>CEO</p>
-                </div>
-
-                <div class="transfer__profile">
-                  <img src="images/profile-2.png" alt="profile" />
-                  <h4>Randy Press</h4>
-                  <p>Director</p>
-                </div>
-
-                <div class="transfer__profile">
-                  <img src="images/profile-3.png" alt="profile" />
-                  <h4>Workman</h4>
-                  <p>Designer</p>
-                </div>
-                <button class="button-next">
-                  <i class="fa-solid fa-angle-right"></i>
-                </button>
-              </div>
-              <div class="transfer__amount">
-                <p class="transfer__amount-text">Write Ammount</p>
-                <form action="#" class="transfer__amount-form">
-                  <input
-                    type="text"
-                    class="transfer__amount-input"
-                    placeholder="525.50"
-                    name="amount"
+                  <img
+                    src="../images/icons/mastercard-2.svg"
+                    alt="mastercard"
                   />
-                  <button type="submit" class="transfer__amount-send">
-                    Send <i class="fa-regular fa-paper-plane"></i>
-                  </button>
-                </form>
+                </div>
               </div>
             </div>
           </div>
-          <div class="history">
-            <h2 class="h2--style">Balance History</h2>
-            <div class="history__main-container">
-              <img src="images/history.svg" alt="graph" />
+
+          <div class="cards-epxense-section__right">
+            <h2 class="h2--style">My Expense</h2>
+            <div class="expense__container">
+              <img src="../images/analitics-2.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
     </main>
-    <script src="scripts/sidebar.js"></script>
+    <script src="../../scripts/sidebar.js"></script>
   </body>
 </html>
