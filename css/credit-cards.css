@@ -1,0 +1,478 @@
+.side-bar {
+    height: 1300px;
+}
+
+@media (max-width: 966px) {
+    .side-bar {
+        height: 2400px;
+    }
+}
+
+/* || my cards section */
+
+.all-cards {
+    padding: 24px;
+}
+
+.all-cards__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.my-card__card {
+    width: 350px;
+    height: 235px;
+    background: linear-gradient(107deg, #4C49ED 2.61%, #0A06F4 101.2%);
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.my-card__heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-card__heading p {
+    color: #343C6A;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+.card__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.card__balance-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__balance-amount {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 24px;
+    align-items: center;
+}
+
+.card__holder,
+.card__valid {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__name,
+.card__date {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.card__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.card__code {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my-card__card-2 {
+    width: 350px;
+    height: 235px;
+    background-color: white;
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    color: #343C6A;
+    position: relative;
+}
+
+.card__balance-text-2 {
+    color: #343C6A;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__balance-amount-2 {
+    color: #343C6A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__holder-2,
+.card__valid-2 {
+    color: #718EBF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.card__name-2,
+.card__date-2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #343C6A;
+}
+
+.card__bottom-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 25px 25px;
+    border: 1px solid #DFEAF2;
+}
+
+.card__code-2 {
+    color: #343C6A;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.my-card__card-3 {
+    background: linear-gradient(107deg, #2D60FF 2.61%, #539BFF 101.2%);
+    width: 350px;
+    height: 235px;
+    border-radius: 25px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+}
+
+/* || cards info */
+
+.cards-info {
+    padding: 24px;
+}
+
+.card-info__main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 1388px) {
+    .card-info__main-container {
+        justify-content: center;
+    }
+}
+
+.card-statistics {
+    max-width: 350px;
+    width: 100%;
+}
+
+.card-statistics__container {
+    max-width: 350px;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-statistics__statistics {
+    display: flex;
+    gap: 17px;
+    max-width: 245px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-statistics__statistics-side {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.card-statistics__statistic {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-statistics__circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    background-color: #4C78FF;
+}
+
+.circle-2 {
+    background-color: #16DBCC;
+}
+
+.circle-3 {
+
+    background-color: #FF82AC;
+}
+
+.circle-4 {
+    background-color: #FFBB38;
+}
+
+.card-statistics__info {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-list {
+    max-width: 730px;
+    width: 100%;
+}
+
+.card-list__row {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 730px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px 20px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-list__row-icon-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-list__row-text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.card-list__row-heading {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-list__row-info {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card-list__row-details {
+    color: #1814F3;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-list__row-details:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+
+    .card-name,
+    .card-number {
+        display: none;
+    }
+
+    .card-list__row-heading {
+        color: #232323;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .card-list__row-info {
+        color: #718EBF;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .card-list__row-details {
+        color: #1814F3;
+        font-size: 11px;
+        font-weight: 500;
+    }
+}
+
+/* || card setting section */
+
+.card-setting-section {
+    padding: 24px;
+}
+
+.card-setting-section__main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 1369px) {
+    .card-setting-section__main-container {
+        justify-content: center;
+    }
+}
+
+.add-card {
+    max-width: 730px;
+    width: 100%;
+}
+
+.add-card__container {
+    max-width: 730px;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.add-card__form {
+    display: flex;
+    max-width: 670px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 22px;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .add-card__form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .add-card__button {
+        width: 100%;
+    }
+}
+
+.add-card__text {
+    color: #718EBF;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.add-card__input-container {
+    max-width: 320px;
+    width: 100%;
+}
+
+.add-card__input-container label {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.add-card__input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.button--style {
+    align-self: flex-start;
+}
+
+.card-settings {
+    max-width: 350px;
+    width: 100%;
+}
+
+.card-settings__main-container {
+    background-color: white;
+    max-width: 350px;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-settings__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-settings__setting {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.card-settings__name {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-settings__description {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 400;
+}
