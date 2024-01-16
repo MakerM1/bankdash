@@ -27,8 +27,25 @@ aside {
     gap: 15px;
 }
 
+@media (max-width: 770px) {
+    .investments__main-container {
+        flex-direction: column;
+    }
+
+    .investments-card {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
 .investments__card img {
     max-width: 75px;
+    width: 100%;
+}
+
+.investments-card-text {
+    max-width: 176px;
     width: 100%;
 }
 
@@ -37,6 +54,8 @@ aside {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 7px;
+    max-width: 176px;
+    width: 100%;
 }
 
 .investments__expense {

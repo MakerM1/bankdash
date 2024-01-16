@@ -384,6 +384,12 @@ aside {
         display: none;
     }
 
+    .active-loans__main-table th,
+    .active-loans__main-table td {
+        vertical-align: middle;
+        padding: 15px 18px;
+    }
+
     .description-row p span {
         display: inline-block;
     }

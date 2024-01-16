@@ -1,0 +1,174 @@
+.side-bar {
+    min-height: 920px;
+}
+
+/* || loans section */
+
+.loans-section {
+    padding: 24px;
+}
+
+.loans__main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.loans__card {
+    scroll-snap-align: center;
+    display: flex;
+    max-width: 255px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 18px;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.loans__card img {
+    max-width: 70px;
+    width: 100%;
+}
+
+.loans__type {
+    color: #718EBF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.loans__expense {
+    color: #232323;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* || active loans */
+
+.active-loans {
+    padding: 24px;
+}
+
+.active-loans__table {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.active-loans__main-table {
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.active-loans__main-table th {
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.active-loans__main-table td {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.active-loans__main-table td.negative {
+    color: #FF4B4A;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.active-loans__main-table th,
+.active-loans__main-table td {
+    vertical-align: middle;
+    padding: 17px 25px;
+}
+
+.active-loans__main-table tr {
+    border-bottom: 1px solid #F2F4F7;
+}
+
+.description-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.description-row p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.description-row p span {
+    color: #718EBF;
+    font-size: 12px;
+    font-weight: 400;
+    display: none;
+}
+
+.active-loans__main-table td button {
+    border-radius: 50px;
+    border: 1px solid #123288;
+    color: #123288;
+    max-width: 100px;
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.active-loans__main-table td button:hover {
+    border: 1px solid #1814F3;
+    color: #1814F3;
+}
+
+@media (max-width: 1024px) {
+    .active-loans__main-table th {
+        font-size: 12px;
+    }
+
+    .active-loans__main-table td {
+        font-size: 12px;
+    }
+
+    .active-loans__main-table td.negative {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .active-loans__main-table tr th:nth-child(1),
+    .active-loans__main-table tr td:nth-child(1),
+    .active-loans__main-table tr th:nth-child(4),
+    .active-loans__main-table tr td:nth-child(4),
+    .active-loans__main-table tr th:nth-child(5),
+    .active-loans__main-table tr td:nth-child(5),
+    .active-loans__main-table tr th:nth-child(6),
+    .active-loans__main-table tr td:nth-child(6) {
+        display: none;
+    }
+
+    .active-loans__main-table th,
+    .active-loans__main-table td {
+        vertical-align: middle;
+        padding: 15px 18px;
+    }
+
+    .col1-end::before {
+        content: "Total";
+        display: block;
+        margin-bottom: 5px;
+    }
+}
