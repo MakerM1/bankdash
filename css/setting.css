@@ -98,10 +98,17 @@
     position: absolute;
     bottom: 7px;
     right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .settings__edit-pfp:hover {
     background-color: #4643f6;
+}
+
+.settings__edit-pfp-button {
+    display: none;
 }
 
 .settings__form-1 {
