@@ -13,3 +13,12 @@ overlay.addEventListener('click', () => {
     sidebar.classList.remove('active')
     overlay.classList.remove('active')
 })
+
+const sideBarId = document.getElementById('side-bar')
+
+function adjustHeight() {
+    sideBarId.style.height = document.body.clientHeight + "px";
+  }
+  
+  window.addEventListener("load", adjustHeight);
+  adjustHeight();

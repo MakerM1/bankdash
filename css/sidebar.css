@@ -2,7 +2,6 @@
     max-width: 240px;
     width: 100%;
     position: absolute;
-    min-height: 1190px;
     left: 0;
     top: 120px;
     display: inline-block;
@@ -27,11 +26,7 @@
     }
 }
 
-@media (max-width: 1380px) {
-    .side-bar {
-        height: 2200px;
-    }
-}
+
 
 .aside__top {
     min-height: 110px;

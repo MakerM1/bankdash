@@ -1,0 +1,159 @@
+/* || services section */
+
+.services-section {
+    padding: 24px;
+}
+
+.services__main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+}
+
+.services-card {
+    scroll-snap-align: center;
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.services__card img {
+    max-width: 70px;
+    width: 100%;
+}
+
+.services-card-text {
+    max-width: 176px;
+    width: 100%;
+}
+
+.services__type {
+    color: #718EBF;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 176px;
+    width: 100%;
+}
+
+.services__expense {
+    color: #232323;
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+/* || bank services */
+
+.bank-services {
+    padding: 24px;
+}
+
+.bank-services__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.bank-services__row {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px 20px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.bank-services__row-icon-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bank-services__row-text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.bank-services__row-heading {
+    color: #232323;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bank-services__row-info {
+    color: #718EBF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.bank-services__row-details {
+    border-radius: 50px;
+    border: 1px solid #123288;
+    color: #123288;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.bank-services__row-details:hover {
+    border: 1px solid #1814F3;
+    color: #1814F3;
+}
+
+@media (max-width: 870px) {
+
+    .card-name,
+    .card-number {
+        display: none;
+    }
+
+    .bank-services__row-heading {
+        color: #232323;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .bank-services__row-info {
+        color: #718EBF;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .bank-services__row-details {
+        color: #1814F3;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .bank-services__row-details {
+        color: #1814F3;
+        font-size: 11px;
+        font-weight: 500;
+        border: none;
+        width: fit-content;
+    }
+
+    .bank-services__row-details:hover {
+        text-decoration: underline;
+    }
+}

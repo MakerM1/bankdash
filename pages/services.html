@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankDash</title>
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/icon-logo.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/services.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__main-container">
+        <div class="header__hamburger-menu">
+          <span class="header__hamburger-lines"></span>
+          <span class="header__hamburger-lines"></span>
+          <span class="header__hamburger-lines"></span>
+        </div>
+        <div class="header__left">
+          <img src="../images/main-logo.svg" alt="main logo" />
+          <div class="line"></div>
+          <h1 class="header__title">Services</h1>
+        </div>
+        <div class="header__right">
+          <div class="header__inputs">
+            <form action="#" class="header__search">
+              <input
+                type="search"
+                placeholder="Search for something"
+                class="header__search-input"
+              />
+            </form>
+
+            <button class="default-button-style">
+              <img src="../images/settings-1.svg" alt="settings" />
+            </button>
+
+            <button class="default-button-style">
+              <img src="../images/notification-1.svg" alt="notifications" />
+            </button>
+          </div>
+          <a href="#"
+            ><img
+              src="../images/profile-picture.png"
+              alt="pfp"
+              class="header__pfp"
+          /></a>
+        </div>
+      </div>
+      <div class="header__phone-search">
+        <form action="#" class="header__search">
+          <input
+            type="search"
+            placeholder="Search for something"
+            class="header__search-input"
+          />
+        </form>
+      </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <aside class="side-bar" id="side-bar">
+      <div class="aside__main-container">
+        <div class="aside__bottom">
+          <nav>
+            <ul class="nav__options">
+              <li>
+                <a href="../index.html" class="nav__option">
+                  <i class="fa-solid fa-house"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li>
+                <a href="transactions.html" class="nav__option">
+                  <i class="fa-solid fa-money-bill-transfer"></i>
+                  <p>Transactions</p>
+                </a>
+              </li>
+              <li>
+                <a href="accounts.html" class="nav__option">
+                  <i class="fa-solid fa-user"></i>
+                  <p>Accounts</p>
+                </a>
+              </li>
+              <li>
+                <a href="services.html" class="nav__option">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>services</p>
+                </a>
+              </li>
+              <li>
+                <a href="credit-cards.html" class="nav__option">
+                  <i class="fa-solid fa-credit-card"></i>
+                  <p>Credit Cards</p>
+                </a>
+              </li>
+              <li>
+                <a href="loans.html" class="nav__option">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                  <p>Loans</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option active">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <p>Services</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <p>My Privileges</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-gear"></i>
+                  <p>Setting</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="services-section">
+        <div class="services__main-container">
+          <div class="services-card">
+            <img src="../images/icons/life-insurance.svg" alt="my balance" />
+            <div class="services-card-text">
+              <p class="services__expense">Life Insurance</p>
+              <p class="services__type">Unlimited protection</p>
+            </div>
+          </div>
+          <div class="services-card">
+            <img src="../images/icons/shopping.svg" alt="income" />
+            <div class="services-card-text">
+              <p class="services__expense">Shopping</p>
+              <p class="services__type">Buy. Think. Grow.</p>
+            </div>
+          </div>
+
+          <div class="services-card">
+            <img src="../images/icons/safety.svg" alt="saving" />
+            <div class="services-card-text">
+              <p class="services__expense">Safety</p>
+              <p class="services__type">We are your allies</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bank-services">
+        <div class="bank-services__main-contanier">
+          <h2 class="h2--style">Bank Services List</h2>
+          <div class="bank-services__container">
+            <div class="bank-services__row">
+              <div class="bank-services__row-icon-title">
+                <img src="../images/icons/loan-2.svg" alt="bank service icon" />
+                <div class="bank-services__row-text">
+                  <p class="bank-services__row-heading">Business loans</p>
+                  <p class="bank-services__row-info">
+                    It is a long established
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bank-services__row-text bank-services__row-middle card-name"
+              >
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-number">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-name">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+              <a href="#" class="bank-services__row-details">View Details</a>
+            </div>
+
+            <div class="bank-services__row">
+              <div class="bank-services__row-icon-title">
+                <img
+                  src="../images/icons/briefcase.svg"
+                  alt="bank service icon"
+                />
+                <div class="bank-services__row-text">
+                  <p class="bank-services__row-heading">Checking accounts</p>
+                  <p class="bank-services__row-info">
+                    It is a long established
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bank-services__row-text bank-services__row-middle card-name"
+              >
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-number">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-name">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+              <a href="#" class="bank-services__row-details">View Details</a>
+            </div>
+
+            <div class="bank-services__row">
+              <div class="bank-services__row-icon-title">
+                <img
+                  src="../images/icons/statistics-2.svg"
+                  alt="bank service icon"
+                />
+                <div class="bank-services__row-text">
+                  <p class="bank-services__row-heading">Savings accounts</p>
+                  <p class="bank-services__row-info">
+                    It is a long established
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bank-services__row-text bank-services__row-middle card-name"
+              >
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-number">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-name">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+              <a href="#" class="bank-services__row-details">View Details</a>
+            </div>
+
+            <div class="bank-services__row">
+              <div class="bank-services__row-icon-title">
+                <img
+                  src="../images/icons/profile-5.svg"
+                  alt="bank service icon"
+                />
+                <div class="bank-services__row-text">
+                  <p class="bank-services__row-heading">
+                    Debit and credit cards
+                  </p>
+                  <p class="bank-services__row-info">
+                    It is a long established
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bank-services__row-text bank-services__row-middle card-name"
+              >
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-number">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-name">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+              <a href="#" class="bank-services__row-details">View Details</a>
+            </div>
+
+            <div class="bank-services__row">
+              <div class="bank-services__row-icon-title">
+                <img
+                  src="../images/icons/safety-2.svg"
+                  alt="bank service icon"
+                />
+                <div class="bank-services__row-text">
+                  <p class="bank-services__row-heading">Life Insurance</p>
+                  <p class="bank-services__row-info">
+                    It is a long established
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bank-services__row-text bank-services__row-middle card-name"
+              >
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-number">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-name">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+              <a href="#" class="bank-services__row-details">View Details</a>
+            </div>
+
+            <div class="bank-services__row">
+              <div class="bank-services__row-icon-title">
+                <img src="../images/icons/loan-2.svg" alt="bank service icon" />
+                <div class="bank-services__row-text">
+                  <p class="bank-services__row-heading">Business loans</p>
+                  <p class="bank-services__row-info">
+                    It is a long established
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bank-services__row-text bank-services__row-middle card-name"
+              >
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-number">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+
+              <div class="bank-services__row-text card-name">
+                <p class="bank-services__row-heading">Lorem Ipsum</p>
+                <p class="bank-services__row-info">Many publishing</p>
+              </div>
+              <a href="#" class="bank-services__row-details">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../scripts/sidebar.js"></script>
+  </body>
+</html>
