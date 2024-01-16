@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BankDash</title>
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/icon-logo.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/setting.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__main-container">
+        <div class="header__hamburger-menu">
+          <span class="header__hamburger-lines"></span>
+          <span class="header__hamburger-lines"></span>
+          <span class="header__hamburger-lines"></span>
+        </div>
+        <div class="header__left">
+          <img src="../images/main-logo.svg" alt="main logo" />
+          <div class="line"></div>
+          <h1 class="header__title">Setting</h1>
+        </div>
+        <div class="header__right">
+          <div class="header__inputs">
+            <form action="#" class="header__search">
+              <input
+                required
+                type="search"
+                placeholder="Search for something"
+                class="header__search-input"
+              />
+            </form>
+
+            <button class="default-button-style">
+              <img src="../images/settings-1.svg" alt="settings" />
+            </button>
+
+            <button class="default-button-style">
+              <img src="../images/notification-1.svg" alt="notifications" />
+            </button>
+          </div>
+          <a href="#"
+            ><img
+              src="../images/profile-picture.png"
+              alt="pfp"
+              class="header__pfp"
+          /></a>
+        </div>
+      </div>
+      <div class="header__phone-search">
+        <form action="#" class="header__search">
+          <input
+            required
+            type="search"
+            placeholder="Search for something"
+            class="header__search-input"
+          />
+        </form>
+      </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <aside class="side-bar" id="side-bar">
+      <div class="aside__main-container">
+        <div class="aside__bottom">
+          <nav>
+            <ul class="nav__options">
+              <li>
+                <a href="../index.html" class="nav__option">
+                  <i class="fa-solid fa-house"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li>
+                <a href="transactions.html" class="nav__option">
+                  <i class="fa-solid fa-money-bill-transfer"></i>
+                  <p>Transactions</p>
+                </a>
+              </li>
+              <li>
+                <a href="accounts.html" class="nav__option">
+                  <i class="fa-solid fa-user"></i>
+                  <p>Accounts</p>
+                </a>
+              </li>
+              <li>
+                <a href="services.html" class="nav__option">
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <p>services</p>
+                </a>
+              </li>
+              <li>
+                <a href="credit-cards.html" class="nav__option">
+                  <i class="fa-solid fa-credit-card"></i>
+                  <p>Credit Cards</p>
+                </a>
+              </li>
+              <li>
+                <a href="loans.html" class="nav__option">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                  <p>Loans</p>
+                </a>
+              </li>
+              <li>
+                <a href="services.html" class="nav__option">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <p>Services</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <p>My Privileges</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav__option active">
+                  <i class="fa-solid fa-gear"></i>
+                  <p>Setting</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="settings-section">
+        <div class="settings__main-container">
+          <div class="settings__nav">
+            <ul class="settings__nav-list">
+              <li class="settings__nav-item active">Edit Profile</li>
+              <li class="settings__nav-item">Preferences</li>
+              <li class="settings__nav-item">Security</li>
+            </ul>
+          </div>
+          <div class="settings__content">
+            <div class="settings__edit-profile">
+              <div class="settings__profile-pic">
+                <img
+                  src="../images/profile-picture-2.png"
+                  alt="pfp"
+                  class="settings__pfp"
+                />
+                <button class="settings__edit-pfp">
+                  <img src="../images/icons/pencil.svg" alt="pencil" />
+                </button>
+              </div>
+              <form action="#" class="settings__form-1" id="settings__form-1">
+                <div class="settings__options-column-1">
+                  <div class="settings__form-input-container">
+                    <label for="yourName" class="settings__form-label"
+                      >Your Name</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      value="Charlene Reed"
+                      placeholder="Your Name"
+                      id="yourName"
+                      class="input--style settings__form-input"
+                      name="userName"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="yourEmail" class="settings__form-label"
+                      >Email</label
+                    >
+                    <input
+                      required
+                      type="email"
+                      value="charlenereed@gmail.com"
+                      placeholder="Email"
+                      id="yourEmail"
+                      class="input--style settings__form-input"
+                      name="email"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="dateOfBirth" class="settings__form-label"
+                      >Date of Birth</label
+                    >
+                    <input
+                      required
+                      type="date"
+                      value="1990-01-25"
+                      max="2006-12-31"
+                      placeholder="Your Name"
+                      id="dateOfBirth"
+                      class="input--style settings__form-input"
+                      name="birthDate"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="address" class="settings__form-label"
+                      >Permanent Address</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      value="San Jose, California, USA"
+                      placeholder="Your Address"
+                      id="address"
+                      class="input--style settings__form-input"
+                      name="address"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="postalCode" class="settings__form-label"
+                      >Postal Code</label
+                    >
+                    <input
+                      required
+                      type="number"
+                      value="45962"
+                      placeholder="Postal Code"
+                      id="postalCode"
+                      class="input--style settings__form-input"
+                      name="postalCode"
+                    />
+                  </div>
+                </div>
+                <div class="settings__options-column-2">
+                  <div class="settings__form-input-container">
+                    <label for="userName" class="settings__form-label"
+                      >User Name</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      value="Charlene Reed"
+                      placeholder="User Name"
+                      id="userName"
+                      class="input--style settings__form-input"
+                      name="userName"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="Password" class="settings__form-label"
+                      >Password</label
+                    >
+                    <input
+                      required
+                      type="email"
+                      value="**********"
+                      placeholder="Password"
+                      id="Password"
+                      class="input--style settings__form-input"
+                      name="Password"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="presentDate" class="settings__form-label"
+                      >Present Address</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      value="San Jose, California, USA"
+                      placeholder="Present Address"
+                      id="presentDate"
+                      class="input--style settings__form-input"
+                      name="presentDate"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="city" class="settings__form-label">City</label>
+                    <input
+                      required
+                      type="text"
+                      value="San Jose"
+                      placeholder="City"
+                      id="city"
+                      class="input--style settings__form-input"
+                      name="city"
+                    />
+                  </div>
+
+                  <div class="settings__form-input-container">
+                    <label for="Country" class="settings__form-label"
+                      >Country</label
+                    >
+                    <input
+                      required
+                      type="text"
+                      value="USA"
+                      placeholder="Country"
+                      id="Country"
+                      class="input--style settings__form-input"
+                      name="Country"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="settings__save-button">
+            <button class="button--style" type="submit" form="settings__form-1">
+              Save
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/settings.js"></script>
+  </body>
+</html>

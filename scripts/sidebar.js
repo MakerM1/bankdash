@@ -17,8 +17,9 @@ overlay.addEventListener('click', () => {
 const sideBarId = document.getElementById('side-bar')
 
 function adjustHeight() {
-    sideBarId.style.height = document.body.clientHeight + "px";
-  }
-  
-  window.addEventListener("load", adjustHeight);
-  adjustHeight();
+    sideBarId.style.height = document.body.clientHeight + 20 + "px";
+}
+
+window.addEventListener("load", adjustHeight);
+adjustHeight();
+console.log(document.body.clientHeight)
